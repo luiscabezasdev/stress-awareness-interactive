@@ -96,27 +96,35 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 p-8 transition-colors duration-500 dark:from-slate-950 dark:via-slate-900 dark:to-slate-900">
       {/* Timer */}
-      {tourStep >= 0 && <Timer timeLeft={timeLeft} isPlaying={isPlaying} />}
+      {tourStep >= 0 && (
+        <Timer
+          timeLeft={timeLeft}
+          isPlaying={isPlaying}
+          onPrevStep={prevStep}
+          onNextStep={nextStep}
+          onTogglePlay={togglePlay}
+          onToggleTheme={toggleTheme}
+          isDarkMode={isDarkMode}
+          canPrev={tourStep > 0}
+          canNext={tourStep < allItems.length - 1}
+        />
+      )}
 
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 animate-fadeIn">
-          <div className="flex flex-col gap-4 items-center justify-between text-center sm:flex-row sm:text-left">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent dark:from-cyan-300 dark:via-purple-300 dark:to-pink-300">
+        <div className="text-center mb-12 animate-fadeIn flex flex-col items-center gap-4">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent dark:from-cyan-300 dark:via-purple-300 dark:to-pink-300 max-w-4xl">
             Dangers and Manifestations of Stress
           </h1>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto dark:text-gray-300">
-                Explore the serious health impacts and common signs of stress. Start the tour or click any card to learn more.
-              </p>
-            </div>
-            <button
-              onClick={toggleTheme}
-              className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-5 py-2 text-sm font-semibold text-slate-700 shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
-            >
-              {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
-            </button>
-          </div>
+          <p className="text-gray-600 text-lg max-w-3xl dark:text-gray-300">
+            Explore the serious health impacts and common signs of stress. Start the tour or click any card to learn more.
+          </p>
+          <button
+            onClick={toggleTheme}
+            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-5 py-2 text-sm font-semibold text-slate-700 shadow-md transition-all duration-300 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
+          >
+            {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+          </button>
         </div>
 
         {/* Tour Controls */}
