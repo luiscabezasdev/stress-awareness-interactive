@@ -1,16 +1,48 @@
-# React + Vite
+# Stress Awareness Interactive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An elegant and interactive educational infographic that explores the dangers and manifestations of stress through an immersive guided tour experience.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎯 **Guided Tour**: Automatic presentation with smooth scrolling and timed explanations
+- ⏱️ **Elegant Timer**: Circular countdown timer showing remaining time for each point
+- 🔍 **Zoom Details**: Click any card for in-depth information
+- 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
+- 🎨 **Modern UI**: Beautiful gradients, smooth animations, and intuitive interactions
+- 📊 **12 Key Points**: 6 stress dangers + 6 stress manifestations with scientific explanations
+- 🎬 **Auto-Scroll**: Automatically navigates to each point during the tour
+- 🏆 **Completion Modal**: Inspiring message when tour finishes
 
-## React Compiler
+## 🚀 Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- Tailwind CSS
+- Lucide React Icons
+- Modern JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+## 🎮 How to Use
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Click "Start Guided Tour" to begin the interactive experience
+2. Watch as the infographic automatically guides you through each point
+3. Use Play/Pause controls to manage the tour pace
+4. Click any card anytime for detailed zoom view
+5. Complete the tour to receive an inspiring wellness message
+
+## 🎯 Purpose
+
+This project aims to raise awareness about stress management through an engaging, visual, and educational approach. Understanding stress is the first step toward better mental and physical health.
+
+```
+
+## 🔖 **Tags/Topics sugeridos:**
+```
+
+react, infographic, education, health, wellness, stress-management,
+interactive, data-visualization, tailwindcss, mental-health, ui-ux
+
+```
+
+## 🌐 **About Section (GitHub):**
+```
+
+Interactive stress education platform with guided tours, timers, and dynamic content. Built with React & Tailwind CSS.
